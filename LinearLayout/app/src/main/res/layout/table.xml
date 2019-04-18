@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="#FFEB3B"
+    android:stretchColumns="0,3">
+    <!--待添加组件 -->
+    <!-- 第一行，直接使用组件则独占一行 -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="5px"
+        android:layout_gravity="center_horizontal"/>
+    <!--第二行，用TableRow独占一行，需要设置跨4列-->
+    <TableRow android:layout_height="102dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_span="4"
+            android:src="@drawable/ic_launcher_background"
+
+            />
+    </TableRow>
+    <!--第三行-->
+    <TableRow>
+        <!--第一列，内容为空，用于自动伸展-->
+        <TextView />
+        <!--第二列，用户名文本框-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="用户名"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="260px"
+            android:text="admin"
+            android:textSize="15sp"
+            />
+        <!--第四列，内容为空，用于自动伸展-->
+        <TextView/>
+    </TableRow>
+    <!--第四行-->
+    <TableRow>
+        <!--第一列，内容为空，用于自动伸展-->
+        <TextView/>
+        <!--第二列，密码文本框-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="密码"
+            android:textStyle="bold"/>
+        <!--第三列，密码输入框-->
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:text="pass"
+            android:textStyle="bold"
+            />
+        <!--第四列，内容为空，用于自动伸展-->
+        <TextView/>
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:text="取消"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:text="登陆"
+            android:textSize="14sp" />
+    </TableRow>
+</TableLayout>

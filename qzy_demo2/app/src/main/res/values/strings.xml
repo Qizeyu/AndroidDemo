@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">qzy_demo2</string>
+    <string name="signal">提交</string>
+    <string name="login">韩晓璇的调查问卷</string>
+    <string name="Name">姓名</string>
+    <string name="major">专业</string>
+    <string name="Class">班级</string>
+    <string name="idnumber">学号</string>
+    <string name="Phonenumber">手机号</string>
+
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E91E63">
+
+    <ImageView
+        android:id="@+id/iimage1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="150dp"
+        android:minWidth="100dp"
+        android:minHeight="100dp"
+        android:src="@mipmap/ic_launcher_round"
+
+        tools:srcCompat="@tools:sample/avatars[1]" />
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="150dp"
+        android:layout_toRightOf="@id/iimage1"
+        android:minWidth="100dp"
+        android:minHeight="100dp"
+        android:src="@mipmap/ic_launcher_round"
+        tools:srcCompat="@tools:sample/avatars[4]" />
+
+    <ImageView
+        android:id="@+id/iimage3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iimage1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="150dp"
+        android:minWidth="100dp"
+        android:minHeight="100dp"
+        android:src="@mipmap/ic_launcher_round"
+
+        tools:srcCompat="@tools:sample/avatars[11]" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image2"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="150dp"
+        android:layout_toRightOf="@id/iimage3"
+        android:minWidth="100dp"
+        android:minHeight="100dp"
+        android:src="@mipmap/ic_launcher_round"
+        tools:srcCompat="@tools:sample/avatars[5]" />
+
+</RelativeLayout>

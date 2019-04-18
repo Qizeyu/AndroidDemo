@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="420dp"
+        android:height="800dp"
+        android:background="#FF5722"
+
+        android:gravity="bottom|center"
+        android:text="页脚"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="420dp"
+        android:height="700dp"
+        android:background="#00BCD4"
+        android:text="内容"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="420dp"
+        android:height="50dp"
+        android:text="标题"
+        android:textSize="18in"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:background="#673AB7"/>
+
+
+</FrameLayout>

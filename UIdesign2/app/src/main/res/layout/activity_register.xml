@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/register_name"
+        android:layout_width="266dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="75dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="请输入您的用户名" />
+
+    <EditText
+        android:id="@+id/register_password"
+        android:layout_width="263dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="77dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="请输入密码" />
+
+    <EditText
+        android:id="@+id/register_make_sure_password"
+        android:layout_width="263dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="188dp"
+        android:layout_marginEnd="76dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="请再次确认密码" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="258dp"
+        android:layout_marginEnd="159dp"
+        android:background="@color/colorAccent"
+        android:text="确定"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:onClick="onclick"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="329dp"
+        android:layout_marginEnd="158dp"
+        android:background="@color/no"
+        android:text="取消"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:onClick="cancel"/>
+
+</RelativeLayout>
