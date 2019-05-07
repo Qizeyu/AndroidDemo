@@ -43,7 +43,8 @@ public class MainActivity extends AppCompatActivity {
 
             }
     }
-    public void forgetPass(View v)              //忘记密码按钮事件
+    //忘记密码按钮事件
+    public void forgetPass(View v)
     {
 
             Intent intent  = new Intent();
@@ -51,7 +52,8 @@ public class MainActivity extends AppCompatActivity {
             this.startActivity(intent);
 
     }
-    public void register(View V)                //
+    //注册界面按钮事件
+    public void register(View V)
     {
         Intent intent  = new Intent();
         intent.setClass(this,RegisterActivity.class);

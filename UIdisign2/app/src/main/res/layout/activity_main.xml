@@ -7,6 +7,7 @@
     android:orientation="vertical"
 
     tools:context=".MainActivity">
+    <!--主布局中添加文本框和输入框-->
     <TextView
         android:id="@+id/textView1"
         android:layout_width="match_parent"
@@ -20,7 +21,7 @@
         android:id="@+id/name1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-
+        <!--在主布局中添加文本框和密码框-->
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
@@ -32,7 +33,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword" />
-
+    <!--在主布局中添加性别文本和复选框-->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="32dp"
@@ -42,7 +43,7 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="38dp" >
-
+        <!--设置默认选择是女-->
         <RadioButton
             android:id="@+id/man"
             android:layout_width="81dp"
@@ -55,7 +56,7 @@
             android:text="女" />
 
     </RadioGroup>
-
+    <!--在主布局中添加电话文本框和输入框-->
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
@@ -67,7 +68,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="text|phone" />
-
+    <!--在主布局中添加部门文本框和列表框-->
     <TextView
         android:id="@+id/textView4"
         android:layout_width="match_parent"
@@ -85,7 +86,7 @@
         android:layout_width="match_parent"
         android:layout_height="32dp"
         android:text="爱好" />
-
+    <!--在主布局中添加一个爱好文本框和一个线性布局-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="32dp">

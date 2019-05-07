@@ -14,7 +14,7 @@
         android:layout_width="480dp"
         android:layout_height="200dp"
         android:layout_gravity="center"
-        android:src="@drawable/a001"
+        android:src="@drawable/a111"
         />
     <LinearLayout
         android:layout_width="match_parent"
@@ -60,8 +60,10 @@
         android:text="@string/login"
         android:textSize="25dp"
         android:textStyle="bold"
-        android:background="@color/colorPrimary"
+        android:background="@color/blue"
         android:onClick="login"
+
+
 
         />
     <CheckBox
@@ -91,18 +93,19 @@
             android:text="忘记密码"
             android:textSize="25dp"
             android:layout_marginLeft="60dp"
-            android:background="@color/colorPrimary"
+            android:background="@color/blue"
             android:onClick="forgetPass"
 
             />
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="注册账号"
-            android:textSize="25dp"
             android:layout_marginLeft="220dp"
-            android:background="@color/colorPrimary"
-            android:onClick="register"/>
+            android:background="@color/blue"
+            android:onClick="register"
+            android:text="注册账号"
+            android:textSize="25dp" />
     </FrameLayout>
     <RelativeLayout
         android:layout_width="match_parent"

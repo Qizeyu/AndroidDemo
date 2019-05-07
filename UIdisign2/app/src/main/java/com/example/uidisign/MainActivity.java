@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         username = (EditText) findViewById(R.id.name1);
-        //获取个组件对象，此处省略
+        //获取个组件对象，
         favs  = new ArrayList<CheckBox>();
 
         sex = (RadioGroup)findViewById(R.id.sex);
@@ -36,12 +36,13 @@ public class MainActivity extends AppCompatActivity {
         CheckBox sport  = (CheckBox) findViewById(R.id.sport);
         CheckBox music = (CheckBox) findViewById(R.id.music);
         CheckBox movie = (CheckBox) findViewById(R.id.movie);
-
+        //将各项爱好存入数组
         favs.add(book);
         favs.add(music);
         favs.add(movie);
 
     }
+    //check方法检测用户名是否为空
     public boolean check()
     {
         if(username.getText().toString().equals(""))
@@ -52,11 +53,13 @@ public class MainActivity extends AppCompatActivity {
         }
         return true;
     }
+    //获取性别信息
     public  String getSex()
     {
         RadioButton radiobutton = (RadioButton) findViewById(sex.getCheckedRadioButtonId());
         return radiobutton.getText().toString();
     }
+    //将爱好的信息，形成一个字符串返回去
     public String getFavorite()
     {
         String favo = "";
@@ -74,6 +77,7 @@ public class MainActivity extends AppCompatActivity {
             favo = "您未选择爱好!";
         return favo;
     }
+    //button点击事件，如果点击了button,就执行该函数
     public void myclick(View view)
     {
         if(check())
