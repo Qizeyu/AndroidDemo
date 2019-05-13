@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SQL</string>
+    <string-array name="group">
+        <item>组1</item>
+        <item>组2</item>
+        <item>组3</item>
+        <item>组4</item>
+    </string-array>
+</resources>
+
