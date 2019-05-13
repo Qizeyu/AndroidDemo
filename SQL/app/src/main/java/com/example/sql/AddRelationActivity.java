@@ -23,7 +23,7 @@ public class AddRelationActivity extends AppCompatActivity {
         addGroup = (Spinner) findViewById(R.id.addGroup);
     }
     public void save(View view){
-        final ContentValues values = new ContentValues();
+        final ContentValues values = new ContentValues();//ContentValues 和HashTable类似都是一种存储的机制
         values.put("name",addName.getText().toString());
         values.put("tel",addTel.getText().toString());
         final DatabaseHelper dbHelper =  new DatabaseHelper(getApplicationContext());
@@ -42,7 +42,7 @@ public class AddRelationActivity extends AppCompatActivity {
 
             }
         });
-        AlertDialog alertDialog  = adBuilder.create();
-        alertDialog.show();
+        AlertDialog alertDialog  = adBuilder.create();          //创建一个警告对话框
+        alertDialog.show();                                     //显示警告对话框
     }
 }
